@@ -18,7 +18,7 @@ img{
 }
 nav div input{
     outline: none;
-    margin-left: 30px;
+    margin-left: 2vw;
     height: 35vh;
     width: 12vw;
     position: relative;
@@ -53,8 +53,8 @@ nav div button{
 .btn{
     text-decoration: none;
     position: absolute;
-    right: 3.2%;
-    top: 27%;
+    right: 5%;
+    top: 31%;
     color: white;
     margin-right: 8vw;
     font-weight: 100;
