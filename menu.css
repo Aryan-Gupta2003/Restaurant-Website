@@ -6,9 +6,11 @@ body{
     background-color: rgba(0, 0, 0, 0.9);
 }
 nav{
+    position: fixed;
     background-color: red;
     height: 4em;
-    max-width: 100vw;
+    width: 100%;
+    z-index: 2;
 }
 nav img{
     height: 50px;
@@ -91,10 +93,12 @@ nav li .cart:hover {
 /* SideBar */
 
 .left{
-    height: 100vh;
+    position: fixed;
+    top: 4em;
     width: 100px;
     background-color: black;
     border: 1px solid white;
+    z-index: 2;
 }
 .sidebar {
     width: 100px;
@@ -116,4 +120,56 @@ nav li .cart:hover {
 }
 .sidebar li a.disable{
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Content */
+
+.right{
+    position: absolute;
+    left: 85px;
+    top: 4em;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* margin-left: 2%; */
+}
+.box img{
+    height: fit-content;
+    width: 27vw;
+}
+.heading{
+    color: white;
+    margin-left: 30px;
+    /* margin-left: 2%; */
+}
+.box{
+    border: 1px solid white;
+    width: 27vw;
+    background-color: white;
+    margin-bottom: 10%;
+    margin-left: 30px;
+}
+.box:hover{
+    transform: scale(1.05);
+}
+
+.box b{
+    margin: 4px 0 4px 6px;
+}
+.box p{
+    margin: 4px 0 4px 6px;
+    color: red;
+}
+.box button{
+    margin: 4px 0 4px 6px;
+    border: 0;
+    background-color: red;
+    padding: 7px;
+    color: white;
+    border-radius: 15px;
+}
+.box button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
 }
