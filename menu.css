@@ -127,7 +127,10 @@ nav li .cart:hover {
 .right{
     position: absolute;
     left: 85px;
-    top: 4em;
+    /* top: 4em; */
+}
+#all1, #pizza1, #burger1, #icecream1, #cake1{
+    padding-top: 65px;
 }
 .content{
     display: grid;
