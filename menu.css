@@ -8,16 +8,16 @@ body{
 nav{
     position: fixed;
     background-color: red;
-    height: 4em;
+    /* height: 60px; */
     width: 100%;
-    z-index: 2;
+    /* z-index: 2; */
 }
 nav img{
     height: 50px;
     width: 50px;
     background-size: contain;   
     border-radius: 50%;
-    margin: 7px 5px 0px 10px;
+    margin: 7px 0 0 5px;
 }
 nav input{
     outline: none;
@@ -70,6 +70,10 @@ nav li a{
     padding: 3.9vh;
     background-color: red;
 }
+nav li .logo{
+    padding: 0;
+    cursor: default;
+}
 nav li .login{
     padding: 2.6vh;
 }
@@ -90,18 +94,23 @@ nav li .cart:hover {
     border: 2px solid black;
 }
 
+.page{
+    display: flex;
+}
+
 /* SideBar */
 
 .left{
-    position: fixed;
-    top: 4em;
+    /* position: fixed;
+    top: 4em; */
+    margin-top: 65px;
     width: 100px;
     background-color: black;
     border: 1px solid white;
-    z-index: 2;
+    /* z-index: 0; */
 }
 .sidebar {
-    width: 100px;
+    /* width: 100px; */
     background-color: black;
 }
 .sidebar li a{
@@ -124,18 +133,17 @@ nav li .cart:hover {
 
 /* Content */
 
-.right{
+/* .right{
     position: absolute;
     left: 85px;
-    /* top: 4em; */
-}
+    top: 4em;
+} */
 #all1, #pizza1, #burger1, #icecream1, #cake1{
     padding-top: 65px;
 }
 .content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* margin-left: 2%; */
 }
 .box img{
     height: fit-content;
@@ -144,7 +152,6 @@ nav li .cart:hover {
 .heading{
     color: white;
     margin-left: 30px;
-    /* margin-left: 2%; */
 }
 .box{
     border: 1px solid white;
@@ -175,4 +182,19 @@ nav li .cart:hover {
 .box button:hover{
     background-color: rgba(0, 0, 0, 0.2);
     color: black;
+}
+
+/* Resolution CSS */
+
+@media screen and (max-width: 767px) {
+    .page{
+        display: inline-block;
+    }
+    .left{
+        width: 100%;
+    }
+    /* .right .content{
+        display: grid;
+    } */
+    
 }
