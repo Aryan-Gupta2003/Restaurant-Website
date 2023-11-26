@@ -10,7 +10,7 @@ nav{
     background-color: red;
     /* height: 60px; */
     width: 100%;
-    /* z-index: 2; */
+    z-index: 2;
 }
 nav img{
     height: 50px;
@@ -143,7 +143,7 @@ nav li .cart:hover {
 }
 .content{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
 }
 .box img{
     height: fit-content;
@@ -174,6 +174,7 @@ nav li .cart:hover {
 .box button{
     margin: 4px 0 4px 6px;
     border: 0;
+    width: 95%;
     background-color: red;
     padding: 7px;
     color: white;
@@ -191,10 +192,40 @@ nav li .cart:hover {
         display: inline-block;
     }
     .left{
-        width: 100%;
+        width: 97vw;
     }
-    /* .right .content{
+    .content{
         display: grid;
-    } */
-    
+        grid-template-columns: 1fr 1fr;
+    }
+    .box{
+        width: 290px;
+    }
+    .box img{
+        width: 290px;
+    }
 }
+
+
+@media screen and (max-width: 676px) {
+    nav{
+        position: fixed;
+    }
+    a.cart{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .left{
+        width: 99vw;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .box{
+        width: 250px;
+    }
+    .box img{
+        width: 250px;
+    }
+};
